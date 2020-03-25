@@ -1,7 +1,9 @@
-import { LoginComponent } from '../shared/components/login/login.component';
+
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
 
 const borrowerRoutes: Routes = [
 
@@ -10,7 +12,7 @@ const borrowerRoutes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'dashboard',
+                redirectTo: 'login',
                 pathMatch: 'full'
             },
             {
@@ -20,6 +22,10 @@ const borrowerRoutes: Routes = [
             {
                 path: 'login',
                 component: LoginComponent
+            },
+            {
+                path: 'signup',
+                component: SignUpComponent
             }
         ]
     }
