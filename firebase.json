@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "tool-borrows",
+      "public": "dist/tool-borrows",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

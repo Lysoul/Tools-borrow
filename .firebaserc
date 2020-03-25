@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bic-borrow": {
+      "hosting": {
+        "tool-borrows": [
+          "bic-borrow"
+        ]
+      }
+    }
+  }
+}
