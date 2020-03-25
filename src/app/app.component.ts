@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import 'firebase/firestore';
+import { firestore } from 'firebase';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -7,8 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
+  constructor(private firestore: AngularFirestore) {
+    
+  }
+
   title = 'tool-borrows';
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+
   }
 }
